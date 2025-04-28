@@ -56,7 +56,7 @@ const config: webpack.Configuration & Pick<WebpackOptionsNormalized, 'devServer'
       name: "producer",
       filename: 'remoteEntry.js',
       exposes: {
-        './App': './src/App',
+        './App': './src/ProducerApp',
       },
       shared: {
         "react": {singleton: true}, 
